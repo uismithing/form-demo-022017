@@ -57,16 +57,23 @@
 {
 	display: block;
 	position: relative;
+	height: 4vh;
 }
 .header-logobadge
 {
 	display: inline-block;
 	position: relative;
 	float: left;
-	width: 2vh;
-	height: 2vh;
-	margin: 1vh 1vh 0 0;
-	background-color: rgba(0,0,200,.2);
+	width: 4vh;
+	height: 4vh;
+	margin: 0 1vh 0 0;
+	border-radius: 50%;
+
+	background-color: rgba(0,0,0,0);
+	background-position: left top;
+	background-image: url("../media/images/formdemo/med-logo_600x594.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .header-logocaption
 {
@@ -86,7 +93,8 @@
 {
 	display: inline-block;
 	position: relative;
-	vertical-align: top;
+	top: 50%;
+	transform: translateY(-50%);
 
 	color: rgba(20,20,100,1);
 	font-weight: bold;
