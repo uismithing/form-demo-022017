@@ -260,7 +260,7 @@ class FormdemoLanding extends Component
 										</div>
 									</div>
 									<div id="formpanel-birthcity-container" className="formpanel-birthcitycluster">
-										<div className={`namefieldcluster-inputgroup form-group ${birthcity.touched && birthcity.invalid ? "has-danger" : ""}`}>
+										<div className={`birthcity-inputgroup form-group ${birthcity.touched && birthcity.invalid ? "has-danger" : ""}`}>
 											<label className="inputfield-birthcity">What city were you born in?</label>
 											<input id="birthcity-input-field" type="text" placeholder="enter your city of birth" className="form-control" {...birthcity}/>
 											<div className="validation-hint">
@@ -460,7 +460,7 @@ class FormdemoLanding extends Component
 						let wallpaperTransformValue
 							= "translateZ(".concat(translateValue, ")");
 						let headingTransformValue
-							= "translateZ(".concat(translateValue, ") translateX(-50%)");
+							= "translateZ(".concat(translateValue, ")");
 						//
 						updateState(scopeProxy,
 						{
@@ -486,7 +486,7 @@ class FormdemoLanding extends Component
 							{
 								"Style":
 								{
-									"transform":"scale(".concat(zoomValue.toString(), ") translateY(-50%)")
+									"transform":"scale(".concat(zoomValue.toString(), ")")
 								}
 							}
 						});
@@ -550,7 +550,7 @@ class FormdemoLanding extends Component
 						let wallpaperTransformValue
 							= "translateZ(".concat(translateValue, ")");
 						let headingTransformValue
-							= "translateZ(".concat(translateValue, ") translateX(-50%)");
+							= "translateZ(".concat(translateValue, ")");
 						//
 						updateState(scopeProxy,
 						{
@@ -576,7 +576,7 @@ class FormdemoLanding extends Component
 							{
 								"Style":
 								{
-									"transform":"scale(".concat(zoomValue.toString(), ") translateY(-50%)")
+									"transform":"scale(".concat(zoomValue.toString(), ")")
 								}
 							}
 						});
